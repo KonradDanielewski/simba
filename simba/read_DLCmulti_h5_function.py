@@ -84,7 +84,7 @@ def importMultiDLCpose(inifile, dataFolder, filetype, idlist, interpolation_meth
     Xcols, Ycols, Pcols = getBpNames(inifile)
     currIDList = idlist
 
-    split_p_and_file_exts = [['DLC_resnet50', 'DLC_resnet_50', 'DLC_dlcrnetms5'], ['.mp4', '.MP4', '.avi', '.AVI']]
+    split_p_and_file_exts = [['DLC_resnet50', 'DLC_resnet_50', 'DLC_dlcrnetms5', 'DLC_effnet_b0'], ['.mp4', '.MP4', '.avi', '.AVI']]
     split_p_and_file_exts = list(itertools.product(*split_p_and_file_exts))
 
     for file in filesFound:
